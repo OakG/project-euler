@@ -1,9 +1,8 @@
 //Largest prime factor
-
-var num1 = prompt("Number");
-var lim1 = 2000000;
-for (var i = 0; i < lim1; i++) {
-    if (num1%i==0) {
-        console.log(i + "is a divisor");
-    }
-}
+//var target = 600851475143;
+//
+//for (var i = 2; i <= target; i++) {
+//    if (target%i==0 && i <= target) {
+//        console.log(i + " is a divisor");
+//    }
+//}
