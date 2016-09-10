@@ -1,29 +1,26 @@
 //Largest prime factor
 //var target = 600851475143;
-//
-//for (var i = 2; i <= target; i++) {
-//    if (target%i==0 && i <= target) {
-//        console.log(i + " is a divisor");
-//    }
-//}
 
-var isPrime = function(number) {
-    count = 0;
 
-    for (i = 2; i <= number; i++) {
-        if (number%i === 0);
-        count =+ 1;
+var target = 789452;
+var highest = 0;
+
+var primeCheck = function(number) {
+    for (i = 2; i < number; i++) {
+        if (number%i === 0) {
+            return false;
+        }
     }
-    if (count === 1) {
-        return true;
-    } else {
-        return false;
-    }
+    return number > 1;
 }
 
 
 for (n = 2; n <= target; n++) {
-    if (target%n === 0 && isPrime(n) === true) {
+    if (target%n === 0 && primeCheck(n) === true) {
         console.log(n + " is a prime divisor")
+        if (n > highest) {
+            highest = n;
+        }
     }
 }
+console.log(highest + " is the biggest divisor.")
