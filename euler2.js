@@ -9,8 +9,8 @@ while (placeholder < limit) {
     placeholder = first + second;
     first = second;
     second = placeholder;
-    if (first % 2 == 0) {
-        result = result + first;
+    if (first % 2 === 0) {
+        result =+ first;
     }
 }
 console.log(result);

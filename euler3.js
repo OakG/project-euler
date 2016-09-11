@@ -1,6 +1,6 @@
 //Largest prime factor
 //var target = 600851475143;
-
+//struggled a bit, had to make a simple function to make it easier.
 
 var target = 789452;
 var highest = 0;
